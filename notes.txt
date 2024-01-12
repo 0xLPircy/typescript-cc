@@ -1,0 +1,3 @@
+- To run : `tsc fileName`
+- to watch ie conti run: ` tsc --watch fileName`
+- config file: `tsc --init`
