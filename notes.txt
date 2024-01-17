@@ -3,3 +3,9 @@
 - config file: `tsc --init`
 - output is outDir in config file and we use dist
 - input is rootDir in config file and we use src
+- TYPES: number, boolean, string, any, array, tuple, union, array of tuples, enum
+- ENUm: they have number assigned to each option (0-1-2-3 by default)
+    follow some kind of numbers
+- function: ` function fName(param1: paramType, param2:paramType): functionType {
+    return param1 + param2;
+}
