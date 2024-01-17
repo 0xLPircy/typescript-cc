@@ -59,3 +59,21 @@ function log(message) {
     console.log(message);
 }
 log("hello");
+const user1 = {
+    id: 1,
+    name: "John",
+};
+const add = (x, y) => x + y;
+const sub = (x, y) => x - y;
+// Classes
+class Person {
+    constructor(id, name) {
+        this.id = id;
+        this.name = name;
+    }
+    register() {
+        return `${this.name} is Registered`;
+    }
+}
+const brad = new Person(1, "Esha");
+console.log(brad.register());
