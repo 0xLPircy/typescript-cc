@@ -21,3 +21,8 @@
 - extend classes
     `extends parentClassName`
     we add super(param1, param2) for calling constructor of parent class in child
+- GENERICS
+    used to do generic things by giving type of a function dynamically
+    example in file
+    reusable components
+     
