@@ -9,3 +9,15 @@
 - function: ` function fName(param1: paramType, param2:paramType): functionType {
     return param1 + param2;
 }
+    if no return use void
+- interface defines the struct but we use types sometimes cause we cant use interface with primitaves or unions
+    for prop to be optional, put ? after it.
+    for prop to be read only not changeable, put `readonly` before it
+- classes
+    private: acces only class, cant colsole log
+    protected: main class or child class only
+    public any
+- interface for class is used by adding `implements intervaceName`
+- extend classes
+    `extends parentClassName`
+    we add super(param1, param2) for calling constructor of parent class in child

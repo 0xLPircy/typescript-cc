@@ -67,4 +67,65 @@ console.log(customerId);
 function addNum(x: number, y: number): number {
   return x + y;
 }
+// if return value
 console.log(addNum(1, 2));
+
+function log(message: string | number): void {
+  console.log(message);
+}
+log("hello");
+
+// Interface, specific struct to a object or function
+interface UserInterface {
+  id: number;
+  name: string;
+  age?: number;
+}
+const user1: UserInterface = {
+  id: 1,
+  name: "John",
+};
+// define function as interface
+interface MathFunc {
+  (x: number, y: number): number;
+}
+const add: MathFunc = (x: number, y: number): number => x + y;
+const sub: MathFunc = (x: number, y: number): number => x - y;
+
+// INTERFACE FOR CLASS
+interface PersonInterface {
+  id: number;
+  name: string;
+  register(): string;
+}
+
+// Classes
+class Person implements PersonInterface {
+  id: number;
+  name: string;
+
+  constructor(id: number, name: string) {
+    this.id = id;
+    this.name = name;
+  }
+
+  register() {
+    return `${this.name} is Registered`;
+  }
+}
+const brad = new Person(1, "Esha");
+console.log(brad.register());
+
+// sub classes
+class Employee extends Person {
+  position: string;
+
+  constructor(id: number, name: string, position: string) {
+    super(id, name);
+    this.position = position;
+  }
+}
+
+const emp = new Employee(3, "Shay", "Developer");
+
+console.log(emp.register());
